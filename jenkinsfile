@@ -1,18 +1,21 @@
 pipeline{
     agent any
       stages{
-              stage('Build')
+              stage('Build'){
                   steps{
                     echo "Build process successfully done"
                   }
-              stage('Test')
+}
+              stage('Test'){
                   steps{
                     echo "Test process successfully done"
                   }
-              stage('Delopy')
+}
+              stage('Delopy'){
                   steps{
                     echo "Deploy process successfully done"
                   }
+}
 
             }
 }
